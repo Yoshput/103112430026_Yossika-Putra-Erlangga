@@ -6,17 +6,124 @@ Bahasa pemrograman C++ merupakan salah satu dasar penting dalam pembelajaran alg
 
 Pada praktikum ini, soal pertama menekankan pada penggunaan tipe data float dan operator aritmatika untuk melakukan perhitungan matematis dasar [2]. Soal kedua melibatkan percabangan untuk mengonversi angka menjadi teks, yang umum diterapkan pada aplikasi keuangan maupun sistem pelaporan otomatis [3]. Sedangkan soal ketiga melatih penggunaan nested loop untuk membentuk pola, yang berguna pada pemrosesan data bertingkat [4].
 
-### A. ...<br/>
-...
-#### 1. ...
-#### 2. ...
-#### 3. ...
+## A. Dasar Pemrograman C++  
 
-### B. ...<br/>
-...
-#### 1. ...
-#### 2. ...
-#### 3. ...
+1. **Struktur Program C++**  
+   Program C++ biasanya terdiri dari:  
+   - `#include <iostream>` → library standar input-output  
+   - `int main()` → fungsi utama yang pertama kali dijalankan  
+   - `{ ... }` → blok kode perintah  
+
+   Contoh:  
+   ```cpp
+   #include <iostream>
+   using namespace std;
+
+   int main() {
+       cout << "Hello World!" << endl;
+       return 0;
+   }
+   ```
+
+2. **Tipe Data**  
+   - `int` → bilangan bulat (contoh: 5, -10)  
+   - `float` / `double` → bilangan desimal (contoh: 3.14, -2.5)  
+   - `char` → karakter tunggal (contoh: 'A', 'z')  
+   - `string` → teks (contoh: "Hello")  
+   - `bool` → logika benar/salah (true/false)  
+
+3. **Operator Aritmatika**  
+   - Penjumlahan (`+`)  
+   - Pengurangan (`-`)  
+   - Perkalian (`*`)  
+   - Pembagian (`/`)  
+   - Modulus (`%`)  
+
+---
+
+## B. Input dan Output  
+
+1. **Fungsi `cin` (input)**  
+   Digunakan untuk membaca masukan dari pengguna.  
+   ```cpp
+   int angka;
+   cin >> angka;
+   ```
+
+2. **Fungsi `cout` (output)**  
+   Digunakan untuk menampilkan keluaran ke layar.  
+   ```cpp
+   cout << "Nilai: " << angka << endl;
+   ```
+
+3. **Kombinasi Input-Output**  
+   Input dapat diproses lalu langsung ditampilkan.  
+   ```cpp
+   int x, y;
+   cin >> x >> y;
+   cout << "Hasil penjumlahan: " << x + y << endl;
+   ```
+
+---
+
+## C. Percabangan  
+
+1. **If–Else**  
+   Digunakan untuk membuat keputusan berdasarkan kondisi.  
+   ```cpp
+   if (x > y) {
+       cout << "x lebih besar" << endl;
+   } else if (x < y) {
+       cout << "y lebih besar" << endl;
+   } else {
+       cout << "x dan y sama" << endl;
+   }
+   ```
+
+2. **Switch–Case**  
+   Cocok digunakan jika banyak pilihan.  
+   ```cpp
+   int pilihan;
+   cin >> pilihan;
+   switch(pilihan) {
+       case 1: cout << "Menu 1"; break;
+       case 2: cout << "Menu 2"; break;
+       default: cout << "Pilihan salah";
+   }
+   ```
+
+---
+
+## D. Perulangan  
+
+1. **For Loop**  
+   Digunakan jika jumlah iterasi sudah diketahui.  
+   ```cpp
+   for (int i = 1; i <= 5; i++) {
+       cout << i << " ";
+   }
+   ```
+
+2. **While Loop**  
+   Digunakan jika perulangan berdasarkan kondisi.  
+   ```cpp
+   int j = 5;
+   while (j > 0) {
+       cout << j << " ";
+       j--;
+   }
+   ```
+
+3. **Do–While Loop**  
+   Menjalankan perintah minimal sekali sebelum cek kondisi.  
+   ```cpp
+   int k = 1;
+   do {
+       cout << k << " ";
+       k++;
+   } while (k <= 5);
+   ```
+
 
 ## Guided 
 
