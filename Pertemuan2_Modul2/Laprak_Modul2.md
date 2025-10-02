@@ -421,16 +421,16 @@ int main() {
 ### Output Unguided 1 :
 
 ##### Output 1
-![Screenshot Output Unguided 1_1](https://github.com/Yoshput/103112430026_Yossika-Putra-Erlangga/blob/main/Pertemuan2_Modul2/output/Output-Unguided1-Modul1.png)
+![Screenshot Output Unguided 1_1](https://github.com/Yoshput/103112430026_Yossika-Putra-Erlangga/blob/main/Pertemuan2_Modul2/output/Output-Unguided1-Modul2.png)
 
 ##### Output 2
-![Screenshot Output Unguided 1_1](https://github.com/Yoshput/103112430026_Yossika-Putra-Erlangga/blob/main/Pertemuan2_Modul2/output/Output-Unguided1.2-Modul1.png)
+![Screenshot Output Unguided 1_2](https://github.com/Yoshput/103112430026_Yossika-Putra-Erlangga/blob/main/Pertemuan2_Modul2/output/Output-Unguided1.2-Modul2.png)
 
 ##### Output 3
-![Screenshot Output Unguided 1_1](https://github.com/Yoshput/103112430026_Yossika-Putra-Erlangga/blob/main/Pertemuan2_Modul2/output/Output-Unguided1.3-Modul1.png)
+![Screenshot Output Unguided 1_3](https://github.com/Yoshput/103112430026_Yossika-Putra-Erlangga/blob/main/Pertemuan2_Modul2/output/Output-Unguided1.3-Modul2.png)
 
 ##### Output 4
-![Screenshot Output Unguided 1_1](https://github.com/Yoshput/103112430026_Yossika-Putra-Erlangga/blob/main/Pertemuan2_Modul2/output/Output-Unguided1.4-Modul1.png)
+![Screenshot Output Unguided 1_4](https://github.com/Yoshput/103112430026_Yossika-Putra-Erlangga/blob/main/Pertemuan2_Modul2/output/Output-Unguided1.4-Modul2.png)
 
 Program di atas dibuat untuk mengolah dua buah matriks berukuran 3x3. Operasi yang bisa dilakukan adalah penjumlahan, pengurangan, dan perkalian matriks. Setiap operasi dikerjakan melalui prosedur khusus, lalu dipanggil menggunakan menu pilihan berbasis switch-case. Dengan cara ini, pengguna cukup memilih menu yang tersedia untuk langsung melihat hasil perhitungan matriks tanpa perlu menghitung manual.
 
