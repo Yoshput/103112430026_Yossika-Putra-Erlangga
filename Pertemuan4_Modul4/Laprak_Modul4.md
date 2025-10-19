@@ -623,7 +623,7 @@ int main(){
 
     return 0;
 }
-
+---
 ```
 ```
 Penjelasan Ketiga Progam di atas :
@@ -835,14 +835,15 @@ int main() {
 }
 
 ```
-Penjelasan program di atas :
-Di bagian ini programnya nunjukin gimana cara bikin dan nampilin **linked list satu arah**. Pertama list dikosongin dulu pakai `createList()`, terus tiap data dimasukin lewat `alokasi()` dan `insertFirst()` biar ditambah di depan. Pas semua udah masuk, fungsi `printInfo()` dipakai buat nampilin isi list dari depan sampai akhir. Hasil akhirnya data keprint berurutan jadi **9 → 12 → 8 → 0 → 2**.
-
 
 ### Output Unguided 1 :
 
 ##### Output 1
 ![Screenshot Output Unguided 1_1](https://github.com/Yoshput/103112430026_Yossika-Putra-Erlangga/blob/main/Pertemuan4_Modul4/output/Output-Unguided1-Modul4.png)
+
+Penjelasan program di atas :
+Di bagian ini programnya nunjukin gimana cara bikin dan nampilin **linked list satu arah**. Pertama list dikosongin dulu pakai `createList()`, terus tiap data dimasukin lewat `alokasi()` dan `insertFirst()` biar ditambah di depan. Pas semua udah masuk, fungsi `printInfo()` dipakai buat nampilin isi list dari depan sampai akhir. Hasil akhirnya data keprint berurutan jadi **9 → 12 → 8 → 0 → 2**.
+
 
 ### Soal 2 – Penghapusan Node
 Dari hasil soal pertama, lakukan:
@@ -1012,13 +1013,15 @@ int main() {
 }
 
 ```
-Penjelasan program di atas :
-program ini lanjutan dari yang pertama, tapi fokusnya ke cara hapus data dari linked list. Programnya ngilangin node pertama pakai deleteFirst(), node terakhir pakai deleteLast(), dan node di tengah pakai deleteAfter(). Abis dihapus, program ngitung sisa node pakai nbList() terus semua node dihapus total pakai deleteList(). Akhirnya list-nya kosong lagi, alias semua data udah kehapus.
 
 ### Output Unguided 2 :
 
 ##### Output 2
 ![Screenshot Output Unguided 2_1](https://github.com/Yoshput/103112430026_Yossika-Putra-Erlangga/blob/main/Pertemuan4_Modul4/output/Output-Unguided2-Modul4.png)
+
+Penjelasan program di atas :
+program ini lanjutan dari yang pertama, tapi fokusnya ke cara hapus data dari linked list. Programnya ngilangin node pertama pakai deleteFirst(), node terakhir pakai deleteLast(), dan node di tengah pakai deleteAfter(). Abis dihapus, program ngitung sisa node pakai nbList() terus semua node dihapus total pakai deleteList(). Akhirnya list-nya kosong lagi, alias semua data udah kehapus.
+
 
 ## Kesimpulan
 1. **Singly Linked List** adalah struktur data dinamis yang memungkinkan pengelolaan data lebih efisien.  
