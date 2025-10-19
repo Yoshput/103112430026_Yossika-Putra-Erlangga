@@ -1,25 +1,33 @@
 #ifndef SINGLYLIST_H
 #define SINGLYLIST_H
-#define Nil NULL
+
 #include <iostream>
 using namespace std;
 
-struct Node {
-    int data;
-    Node* next;
+#define Nil NULL
+
+typedef int infotype;
+typedef struct ElmList *address;
+
+struct ElmList {
+    infotype info;
+    address next;
 };
 
 struct List {
-    Node* first;
+    address first;
 };
 
-bool isEmpty(List L);
 void createList(List &L);
-Node* alokasi(int nilai);
-void dealokasi(Node* &P);
-void insertFirst(List &L, Node* P);
-void insertAfter(Node* Prec, Node* P);
-void insertLast(List &L, Node* P);
-void printList(List L);
+address alokasi(infotype x);
+void dealokasi(address P);
+void insertFirst(List &L, address P);
+void printInfo(List L);
+
+void deleteFirst(List &L, address &P);
+void deleteLast(List &L, address &P);
+void deleteAfter(address Prec, address &P);
+int nbList(List L);
+void deleteList(List &L);
 
 #endif

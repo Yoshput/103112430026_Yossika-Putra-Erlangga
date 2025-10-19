@@ -1,60 +1,72 @@
 #include "Singlylist.h"
-#include <iostream>
-using namespace std;
 
-bool isEmpty(List L) {
-    return (L.first == Nil);
-}
+void createList(List &L) { L.first = Nil; }
 
-void createList(List &L) {
-    L.first = Nil;
-}
-
-Node* alokasi(int nilai) {
-    Node* P = new Node;
-    P->data = nilai;
+address alokasi(infotype x) {
+    address P = new ElmList;
+    P->info = x;
     P->next = Nil;
     return P;
 }
 
-void dealokasi(Node* &P) {
-    delete P;
-    P = Nil;
-}
+void dealokasi(address P) { delete P; }
 
-void insertFirst(List &L, Node* P) {
+void insertFirst(List &L, address P) {
     P->next = L.first;
     L.first = P;
 }
 
-void insertAfter(Node* Prec, Node* P) {
-    if (Prec != Nil) {
-        P->next = Prec->next;
-        Prec->next = P;
+void printInfo(List L) {
+    address P = L.first;
+    while (P != Nil) {
+        cout << P->info;
+        if (P->next != Nil) cout << " ";
+        P = P->next;
+    }
+    cout << endl;
+}
+
+void deleteFirst(List &L, address &P) {
+    if (L.first != Nil) {
+        P = L.first;
+        L.first = P->next;
+        P->next = Nil;
     }
 }
 
-void insertLast(List &L, Node* P) {
-    if (isEmpty(L)) {
-        L.first = P;
-    } else {
-        Node* Q = L.first;
-        while (Q->next != Nil) {
-            Q = Q->next;
+void deleteLast(List &L, address &P) {
+    if (L.first != Nil) {
+        address Q = L.first;
+        if (Q->next == Nil) {
+            P = Q;
+            L.first = Nil;
+        } else {
+            while (Q->next->next != Nil)
+                Q = Q->next;
+            P = Q->next;
+            Q->next = Nil;
         }
-        Q->next = P;
     }
 }
 
-void printList(List L) {
-    if (isEmpty(L)) {
-        cout << "List kosong." << endl;
-    } else {
-        Node* P = L.first;
-        while (P != Nil) {
-            cout << P->data << " ";
-            P = P->next;
-        }
-        cout << endl;
+void deleteAfter(address Prec, address &P) {
+    if (Prec != Nil && Prec->next != Nil) {
+        P = Prec->next;
+        Prec->next = P->next;
+        P->next = Nil;
+    }
+}
+
+int nbList(List L) {
+    int n = 0;
+    for (address P = L.first; P != Nil; P = P->next) n++;
+    return n;
+}
+
+void deleteList(List &L) {
+    address P;
+    while (L.first != Nil) {
+        deleteFirst(L, P);
+        dealokasi(P);
     }
 }
