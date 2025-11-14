@@ -290,9 +290,8 @@ int main(){
 ### Penjelasan
 
 Pada unguided 3, fungsi **getInputStream** digunakan untuk membaca input karakter satu per satu dari pengguna hingga menekan tombol ENTER. Setiap karakter yang dimasukkan langsung didorong ke dalam stack. Karena stack bekerja secara LIFO, saat data ditampilkan, karakter yang terakhir diketik muncul pertama. Untuk menampilkan dalam urutan asli, fungsi **balikStack** digunakan sehingga karakter ditampilkan sesuai urutan ketika pengguna mengetiknya.
-```
+
 ---
-```
 
 ## Guided 2 – Stack Array (push, pop, balikStack)
 
@@ -563,7 +562,7 @@ Pada unguided 1, program mengimplementasikan stack menggunakan array berukuran t
 ## Unguided 2 – pushAscending
 
 ### 2. Tambahkan prosedur pushAscending( in/out S : Stack, in x : integer)
-![Screenshot Output Unguided 2_1](https://github.com/Yoshput/103112430026_Yossika-Putra-Erlangga/blob/main/Pertemuan7_Modul7/output/Soal1_unguided2.png)
+![Screenshot Output Unguided 2_1](https://github.com/Yoshput/103112430026_Yossika-Putra-Erlangga/blob/main/Pertemuan7_Modul7/output/Soal2_unguided2.png)
 
 ```cpp
 void pushAscending(Stack &S, int x){
@@ -591,7 +590,7 @@ pushAscending(S,9);
 printInfo(S);
 ```
 ##### Output 2
-![Screenshot Output Unguided 2_1](https://github.com/Yoshput/103112430026_Yossika-Putra-Erlangga/blob/main/Pertemuan7_Modul7/output/output-Unguided2-Modul7.png)
+![Screenshot Output Unguided 2_1](https://github.com/Yoshput/103112430026_Yossika-Putra-Erlangga/blob/main/Pertemuan7_Modul7/output/output_Unguided2_Modul7.png)
 ### Penjelasan :
 Pada unguided 2, fungsi **pushAscending** dibuat agar data yang dimasukkan tetap tersimpan dalam keadaan terurut dari kecil ke besar. Karena stack tidak mendukung penyisipan di tengah, maka digunakan stack sementara untuk menyimpan elemen yang lebih besar dari nilai yang akan dimasukkan. Setelah menemukan posisi yang tepat, nilai baru dimasukkan ke stack utama lalu seluruh elemen dari stack sementara dikembalikan ke stack awal sehingga tatanan ascending tetap terjaga. Dengan teknik ini, stack dapat dikelola seperti struktur terurut meskipun secara alami hanya mendukung operasi push dan pop di bagian atas.
 
