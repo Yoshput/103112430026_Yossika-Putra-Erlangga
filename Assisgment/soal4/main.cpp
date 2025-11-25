@@ -12,20 +12,20 @@ int main() {
 
     createQueue(Q);
 
-    cout << "=== INISIALISASI SOAL (OTOMATIS) ===" << endl;
+    cout << "=== CREATE QUEUE AWAL ===" << endl;
     enQueue(Q, {"123456", "Hutao", 14, "Sumeru"});
     enQueue(Q, {"234567", "Ayaka", 10, "Fontaine"});
     enQueue(Q, {"345678", "Bennet", 7, "Natlan"});
     enQueue(Q, {"456789", "Furina", 16, "Liyue"});
     enQueue(Q, {"567890", "Nefer", 6, "Inazuma"});
 
-    cout << "\n[Output Soal No 4] Menampilkan Queue Awal:" << endl;
+    cout << "\nMenampilkan Queue Awal:" << endl;
     viewQueue(Q);
 
-    cout << "\n[Output Soal No 5] Melakukan DeQueue 1x:" << endl;
+    cout << "\nMelakukan DeQueue 1x:" << endl;
     deQueue(Q); 
 
-    cout << "\n[Output Soal No 6] Queue setelah DeQueue:" << endl;
+    cout << "\nQueue setelah DeQueue:" << endl;
     viewQueue(Q);
     
     cout << "\n=== MASUK KE MENU INTERAKTIF ===" << endl;

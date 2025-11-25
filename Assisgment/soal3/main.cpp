@@ -54,7 +54,7 @@ int main()
     float maxNilai;
     int pos;
     MaxNilaiAkhir(S, maxNilai, pos);
-    cout << "\nBAGIAN B: Max NilaiAkhir = ";
+    cout << "\nMax NilaiAkhir = ";
     if (pos == -1)
         cout << "(tidak ada data)" << endl;
     else
