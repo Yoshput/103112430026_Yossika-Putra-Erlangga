@@ -768,5 +768,6 @@ Pada praktikum Modul 8 ini, mahasiswa mempelajari konsep dan implementasi Queue 
 3. Sharma, A., & Singh, P. (2020). "Analysis of Queue Data Structures in System Simulation", *International Journal of Computer Applications*.
 4. Stallings, W. (2018). *Operating Systems: Internals and Design Principles*. Pearson.
 5. Malik, D. S. (2018). *Data Structures Using C++*. Cengage Learning.
-6. Kurniawan, A. (2021). *Struktur Data dalam Bahasa C++*. Informatika Bandung.
+6. Modul Praktikum Struktur Data. **Modul 08 – Queue**, Telkom University, 2025.
+7. Kurniawan, A. (2021). *Struktur Data dalam Bahasa C++*. Informatika Bandung.
 
